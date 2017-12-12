@@ -3,6 +3,7 @@ import java.util.*;
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 /*The program complies and runs but when its running it does have an index out of bounds array*/
 //////////////////////////////////////////////////////////////////////////////////////////////////
+
 public class christmasProject
 {
     public static void main(String[]args) throws IOException
@@ -13,20 +14,26 @@ public class christmasProject
         Scanner reader = new Scanner (System.in);
         PrintWriter kidWriter = new PrintWriter(new File("kidsResults.txt"));
         PrintWriter giftWriter = new PrintWriter(new File("giftsResults.txt"));
-        String description;
-        int min, max, cost, days, age;
-        double budget;
-        String name;
+        ArrayList<Double> budget = new ArrayList<Double>();
+        ArrayList<Double> cost = new ArrayList<Double>();
+        ArrayList<Integer> min = new ArrayList<Integer>();
+        ArrayList<Integer> max = new ArrayList<Integer>();
+        ArrayList<Integer> days = new ArrayList<Integer>();
+        ArrayList<Integer> age = new ArrayList<Integer>();
+        ArrayList<String> description = new ArrayList<String>();
+        ArrayList<String> name = new ArrayList<String>();
         String n;
 
 
         //assign values from text file
         while(giftReader.hasNext())
         {
-            description = giftReader.next();
+			n = giftReader.next()
+						Winners.add(t);
+            description.add(t);
             min = giftReader.nextInt();
             max = giftReader.nextInt();
-            cost = giftReader.nextInt();
+            cost = giftReader.nextDouble();
             days = giftReader.nextInt();
 
             System.out.println (description);
@@ -34,9 +41,6 @@ public class christmasProject
             System.out.println (max);
             System.out.println (cost);
             System.out.println (days);
-        }
-        while(kidReader.hasNext())
-        {
         }
 
         //get info from user
