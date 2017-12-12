@@ -9,8 +9,8 @@ public class christmasProject
         //declare variables
         Scanner giftReader = new Scanner (new File("gifts.txt"));
         Scanner kidReader = new Scanner (new File("kids.txt"));
-        PrintWriter writer = new PrintWriter(new File("kidsResults.txt"));
-        PrintWriter writer = new PrintWriter(new File("giftsResults.txt"));
+        PrintWriter kidWriter = new PrintWriter(new File("kidsResults.txt"));
+        PrintWriter giftWriter = new PrintWriter(new File("giftsResults.txt"));
         String description;
         int min, max, cost, budget, days, age;
         double budget;
