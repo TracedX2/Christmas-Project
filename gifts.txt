@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Twister game
 5
 80
