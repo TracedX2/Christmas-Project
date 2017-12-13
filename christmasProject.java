@@ -28,13 +28,12 @@ public class christmasProject
         //assign values from text file
         while(giftReader.hasNext())
         {
-			n = giftReader.next()
-						Winners.add(t);
-            description.add(t);
-            min = giftReader.nextInt();
-            max = giftReader.nextInt();
-            cost = giftReader.nextDouble();
-            days = giftReader.nextInt();
+	    n = giftReader.next()
+            description.add(n);
+            min.add(n);
+            max.add(n);
+            cost.add(n);
+            days.add(n);
 
             System.out.println (description);
             System.out.println (min);
