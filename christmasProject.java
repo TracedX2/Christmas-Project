@@ -33,6 +33,22 @@ public class christmasProject
             description.add(d);
 	    int mi = giftReader.nextInt();
             min.add(mi);
+
+             //Get scanner instance
+		Scanner scanner = new Scanner(new File("SampleCSVFile.csv"));
+
+		//Set the delimiter used in file
+		scanner.useDelimiter(",");
+
+		//Get all tokens and store them in some data structure
+		//I am just printing them
+		while (scanner.hasNext())
+		{
+		    System.out.println (scanner.next());
+		}
+
+		//Do not forget to close the scanner
+        scanner.close();
 		}
            /* max.add(n);
             cost.add(n);
