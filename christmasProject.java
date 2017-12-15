@@ -14,14 +14,15 @@ public class christmasProject
         Scanner reader = new Scanner (System.in);
         PrintWriter kidWriter = new PrintWriter(new File("kidsResults.txt"));
         PrintWriter giftWriter = new PrintWriter(new File("giftsResults.txt"));
-        ArrayList<Double> budget = new ArrayList<Double>();
+        double budget = 0;
         ArrayList<Double> cost = new ArrayList<Double>();
         ArrayList<Integer> min = new ArrayList<Integer>();
         ArrayList<Integer> max = new ArrayList<Integer>();
-        ArrayList<Integer> days = new ArrayList<Integer>();
+        int days = 0;
         ArrayList<Integer> age = new ArrayList<Integer>();
         ArrayList<String> description = new ArrayList<String>();
         ArrayList<String> name = new ArrayList<String>();
+        ArrayList<String> behavior = new ArrayList<String>();
         String n;
 
 
@@ -29,10 +30,10 @@ public class christmasProject
         while(giftReader.hasNext())
         {
 
-	   String d = giftReader.next();
-            description.add(d);
-	    int mi = giftReader.nextInt();
-            min.add(mi);
+	   		String d = giftReader.next();
+            	description.add(d);
+	   		int mi = giftReader.nextInt();
+            	min.add(mi);
 
              //Get scanner instance
 		Scanner scanner = new Scanner(new File("SampleCSVFile.csv"));
@@ -52,22 +53,17 @@ public class christmasProject
 		}
            /* max.add(n);
             cost.add(n);
-            days.add(n);
-
+            days.add(n);*/
             System.out.println (description);
             System.out.println (min);
             System.out.println (max);
             System.out.println (cost);
             System.out.println (days);
-        }
 
         //get info from user
         System.out.println("What is your budget?");
-        budget = reader.nextInt();
+        budget = reader.nextDouble();
         System.out.println("When would you like these items by?");
         days = reader.nextInt();
-    }
-}//i think this works??
-*/
 }
 }
