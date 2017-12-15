@@ -31,7 +31,7 @@ public class christmasProject
         while(giftReader.hasNext())
         {
 
-	   		String d = giftReader.next();
+	   		String d = giftReader.nextLine();
             	description.add(d);
 	   		int mi = giftReader.nextInt();
             	min.add(mi);
@@ -52,7 +52,7 @@ public class christmasProject
 		//Do not forget to close the scanner
         scanner.close();
 		}
-	           /* max.add(n);
+           /* max.add(n);
             cost.add(n);
             days.add(n);*/
             System.out.println (description);
@@ -66,17 +66,6 @@ public class christmasProject
         budget = reader.nextDouble();
         System.out.println("When would you like these items by?");
         days = reader.nextInt();
-        /*
-        if(age < 15 && behavior == 'nice')
-        {
-			spent = spent + (budget - cost);
-		}
-		while(budget != 0)
-		{
-			if(age == 16 && behavior == 'nice')
-			{
-				spent = spent +
-			}
-		}		*/
+
 }
 }
