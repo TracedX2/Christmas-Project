@@ -37,7 +37,7 @@ public class christmasProject
             	min.add(mi);
 
              //Get scanner instance
-		Scanner scanner = new Scanner(new File("SampleCSVFile.csv"));
+		Scanner scanner = new Scanner(new File("gifts.txt"));
 
 		//Set the delimiter used in file
 		scanner.useDelimiter(",");
