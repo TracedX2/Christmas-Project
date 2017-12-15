@@ -15,6 +15,7 @@ public class christmasProject
         PrintWriter kidWriter = new PrintWriter(new File("kidsResults.txt"));
         PrintWriter giftWriter = new PrintWriter(new File("giftsResults.txt"));
         double budget = 0;
+        double spent = 0;
         ArrayList<Double> cost = new ArrayList<Double>();
         ArrayList<Integer> min = new ArrayList<Integer>();
         ArrayList<Integer> max = new ArrayList<Integer>();
@@ -36,7 +37,7 @@ public class christmasProject
             	min.add(mi);
 
              //Get scanner instance
-		Scanner scanner = new Scanner(new File("gifts.txt"));
+		Scanner scanner = new Scanner(new File("SampleCSVFile.csv"));
 
 		//Set the delimiter used in file
 		scanner.useDelimiter(",");
@@ -65,5 +66,17 @@ public class christmasProject
         budget = reader.nextDouble();
         System.out.println("When would you like these items by?");
         days = reader.nextInt();
+        /*
+        if(age < 15 && behavior == 'nice')
+        {
+			spent = spent + (budget - cost);
+		}
+		while(budget != 0)
+		{
+			if(age == 16 && behavior == 'nice')
+			{
+				spent = spent +
+			}
+		}		*/
 }
 }
