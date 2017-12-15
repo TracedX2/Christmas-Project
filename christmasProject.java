@@ -52,7 +52,7 @@ public class christmasProject
 		//Do not forget to close the scanner
         scanner.close();
 		}
-           /* max.add(n);
+	           /* max.add(n);
             cost.add(n);
             days.add(n);*/
             System.out.println (description);
