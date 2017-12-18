@@ -34,18 +34,16 @@ public class christmasProject
 
 	   		String d = giftReader.nextLine();
             	description.add(d);
+            	System.out.print(d);
 	   		int mi = giftReader.nextInt();
-	   			reader.nextLine();
             	min.add(mi);
             int maxAge = giftReader.nextInt();
-            	reader.nextLine();
             	max.add(maxAge);
             double price = giftReader.nextDouble();
-            	reader.nextLine();
             	cost.add(price);
             int time = giftReader.nextInt();
             	days.add((Integer)time);
-            	giftReader.nextLine();
+
 
 
 		}
