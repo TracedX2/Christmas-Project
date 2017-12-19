@@ -9,6 +9,7 @@ public class christmasProject
     public static void main(String[]args) throws IOException
     {
         //declare variables
+        //EG - created seperate scanners so that we could read in the files and user input
         Scanner giftReader = new Scanner (new File("gifts.txt"));
         Scanner kidReader = new Scanner (new File("kids.txt"));
         Scanner reader = new Scanner (System.in);
@@ -17,6 +18,7 @@ public class christmasProject
         double budget = 0;
         double spent = 0;
         int daysLeft = 0;
+        //EG - created array lists to hold all of the data
         ArrayList<Double> cost = new ArrayList<Double>();
         ArrayList<Integer> min = new ArrayList<Integer>();
         ArrayList<Integer> max = new ArrayList<Integer>();
