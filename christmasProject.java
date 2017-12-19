@@ -36,9 +36,8 @@ public class christmasProject
 			//EG - brings in items from the list and adds it to the Arrays
 	   		String d = giftReader.nextLine();
             	description.add(d);
-            	System.out.print(d);
 	   		int mi = giftReader.nextInt();
-            	min.add(mi);
+	   			min.add(mi);
             int maxAge = giftReader.nextInt();
             	max.add(maxAge);
             double price = giftReader.nextDouble();
@@ -49,9 +48,7 @@ public class christmasProject
 
 
 		}
-           /* max.add(n);
-            cost.add(n);
-            days.add(n);*/
+
             System.out.println (description);
             System.out.println (min);
             System.out.println (max);
