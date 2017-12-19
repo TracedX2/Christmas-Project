@@ -35,7 +35,7 @@ public class christmasProject
 	   		String d = giftReader.nextLine();
             	description.add(d);
             	System.out.print(d);
-	   		int mi = giftReader.nextInt();
+	   		//ERROR IS IN THIS LINE int mi = giftReader.nextInt();
             	min.add(mi);
             int maxAge = giftReader.nextInt();
             	max.add(maxAge);
