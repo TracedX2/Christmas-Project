@@ -31,11 +31,11 @@ public class christmasProject
         //assign values from text file
         while(giftReader.hasNext())
         {
-
+			//EG - brings in items from the list and adds it to the Arrays
 	   		String d = giftReader.nextLine();
             	description.add(d);
             	System.out.print(d);
-	   		//ERROR IS IN THIS LINE int mi = giftReader.nextInt();
+	   		int mi = giftReader.nextInt();
             	min.add(mi);
             int maxAge = giftReader.nextInt();
             	max.add(maxAge);
