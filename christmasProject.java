@@ -9,13 +9,14 @@ public class christmasProject
     public static void main(String[]args) throws IOException
     {
         //declare variables
+	//DDZ created printwriters to help read in files
         //EG - created seperate scanners so that we could read in the files and user input
         Scanner giftReader = new Scanner (new File("gifts.txt"));
         Scanner kidReader = new Scanner (new File("kids.txt"));
         Scanner reader = new Scanner (System.in);
         PrintWriter kidWriter = new PrintWriter(new File("kidsResults.txt"));
         PrintWriter giftWriter = new PrintWriter(new File("giftsResults.txt"));
-        double budget = 0;
+        ArrayList<Double> budget = new ArrayList<Double>();
         double spent = 0;
         int daysLeft = 0;
         //EG - created array lists to hold all of the data
@@ -60,9 +61,37 @@ public class christmasProject
 
         //get info from user
         System.out.println("What is your budget?");
-        budget = reader.nextDouble();
-        System.out.println("How many days till Christmas?");
+        double g = reader.nextDouble();
+        budget.add(g);
+        System.out.println("When would you like these items by?");
         daysLeft = reader.nextInt();
+	
+	//cut people from the gift list
+        if(age <= 15)
+        {
+            budget = budget - cost;
+        }
+        while(!budget.equals(0))
+        {
+            for(int a = 16; a <= 18; a++)
+            {
+                if(age.equals(a) && behavior.equals("nice"))
+                {
+                    budget = budget - cost;
+                }
+            }
+            for(int b = 16; b <= 18; b++)
+            {
+                if(age.equals(b) && behavior.equals("naughty"))
+                {
+                    budget = budget - cost;
+                }
+            }
+        }
 
+        if(budget.equals(0))
+        {
+            System.out.println ("Santa has run out of money");
+        }
 }
 }
