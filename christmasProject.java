@@ -40,6 +40,11 @@ public class christmasProject
 	   		String d = giftReader.nextLine();
             	description.add(d);
 	   		String mi = giftReader.nextLine();
+<<<<<<< HEAD
+=======
+	   		//parseInt converts the strings to ints so we can add them to the array lists
+	   		int minInt = Integer.parseInt(mi);
+>>>>>>> 3604fac919291c99128a4e689fd646adca30c1ef
 	   			minS.add(mi);
 	   			/*
             String maxAge = giftReader.nextLine();
@@ -53,7 +58,7 @@ public class christmasProject
 
 
 		}
-
+			//prints things out to check them
             System.out.println (description);
             System.out.println (minS);
             System.out.println (max);
