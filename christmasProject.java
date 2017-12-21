@@ -32,28 +32,29 @@ public class christmasProject
         ArrayList<Integer> days = new ArrayList<Integer>();
         String n;
 
+	           //assign values from text file
+	    while(giftReader.hasNext())
+	    {
+	   	//EG - brings in items from the list and adds it to the Arrays
+	   	String d = giftReader.nextLine();
+	        	description.add(d);
 
-        //assign values from text file
-        while(giftReader.hasNext())
-        {
-			//EG - brings in items from the list and adds it to the Arrays
-	   		String d = giftReader.nextLine();
-            	description.add(d);
-	   		String mi = giftReader.nextLine();
-<<<<<<< HEAD
-=======
-	   		//parseInt converts the strings to ints so we can add them to the array lists
-	   		int minInt = Integer.parseInt(mi);
->>>>>>> 3604fac919291c99128a4e689fd646adca30c1ef
-	   			minS.add(mi);
-	   			/*
-            String maxAge = giftReader.nextLine();
-            	max.add(maxAge);
-            String price = giftReader.nextLine();
-            	cost.add(price);
-            String time = giftReader.nextLine();
-            	days.add(time);
-            	*/
+	   	String mi = giftReader.nextLine();
+	   	int minInt = Integer.parseInt(mi);
+	   		minS.add(mi);
+
+	        String maxAge = giftReader.nextLine();
+	        int ageInt = Integer.parseInt(maxAge);
+	        	max.add(ageInt);
+
+	        String price = giftReader.nextLine();
+	        double dollars = Double.parseDouble(price);
+	        	cost.add(dollars);
+
+	        String time = giftReader.nextLine();
+	        int amountOfDays = Integer.parseInt(time);
+	        	days.add(amountOfDays);
+
 
 
 
