@@ -31,6 +31,7 @@ public class christmasProject
         ArrayList<String> behavior = new ArrayList<String>();
         ArrayList<Integer> days = new ArrayList<Integer>();
         String n;
+        //end EG
 
 	           //assign values from text file
 	    while(giftReader.hasNext())
@@ -54,19 +55,24 @@ public class christmasProject
 	        String time = giftReader.nextLine();
 	        int amountOfDays = Integer.parseInt(time);
 	        	days.add(amountOfDays);
+		}
 
-
-
+		//EG - Started the while loop to add the kids
+		//EG - thinking about creating other files to have objects like a present object and a child object
+		while(kidReader.hasNext())
+		{
 
 		}
-			//prints things out to check them
+		//end EG
+
+			//prints things out to check them DDZ
             System.out.println (description);
             System.out.println (minS);
             System.out.println (max);
             System.out.println (cost);
             System.out.println (days);
 
-        //get info from user
+        //get info from user DDZ
         System.out.println("What is your budget?");
         budget = reader.nextDouble();
         System.out.println("When would you like these items by?");
@@ -149,5 +155,6 @@ public class christmasProject
         {
             System.out.println ("Santa has run out of money");
         }
+        //end RF
 }
 }
