@@ -65,7 +65,7 @@ public class christmasProject
         budget.add(g);
         System.out.println("When would you like these items by?");
         daysLeft = reader.nextInt();
-
+	
 	//cut people from the gift list
         if(age <= 15)
         {
@@ -89,6 +89,32 @@ public class christmasProject
             }
         }
 
+<<<<<<< HEAD
+	//cut people from the gift list
+        if(age <= 15)
+        {
+            budget = budget - cost;
+        }
+        while(!budget.equals(0))
+        {
+            for(int a = 16; a <= 18; a++)
+            {
+                if(age.equals(a) && behavior.equals("nice"))
+                {
+                    budget = budget - cost;
+                }
+            }
+            for(int b = 16; b <= 18; b++)
+            {
+                if(age.equals(b) && behavior.equals("naughty"))
+                {
+                    budget = budget - cost;
+                }
+            }
+        }
+
+=======
+>>>>>>> 0927ce69cf89c890c376242bb62711ca159827f2
         if(budget.equals(0))
         {
             System.out.println ("Santa has run out of money");
