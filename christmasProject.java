@@ -63,9 +63,10 @@ public class christmasProject
 		while(kidReader.hasNext())
 		{
 			String test = kidReader.nextLine();
+			System.out.println(test);
 		}
 		//end EG
-
+/*
 			//prints things out to check them DDZ
             System.out.println (description);
             System.out.println (minS);
@@ -157,5 +158,6 @@ public class christmasProject
             System.out.println ("Santa has run out of money");
         }
         //end RF
+        */
 }
 }
