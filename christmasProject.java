@@ -9,7 +9,7 @@ public class christmasProject
     public static void main(String[]args) throws IOException
     {
         //declare variables
-	//DDZ created printwriters to help read in files
+	    //DDZ created printwriters to help read in files
         //EG - created seperate scanners so that we could read in the files and user input
         Scanner giftReader = new Scanner (new File("gifts.txt"));
         Scanner kidReader = new Scanner (new File("kids.txt"));
@@ -32,6 +32,7 @@ public class christmasProject
         ArrayList<String> behavior = new ArrayList<String>();
         ArrayList<Integer> days = new ArrayList<Integer>();
         String n;
+        double totalCost = 0;
         //end EG
 
 	           //assign values from text file
@@ -51,6 +52,7 @@ public class christmasProject
 
 	        String price = giftReader.nextLine();
 	        double dollars = Double.parseDouble(price);
+	        totalCost = totalCost + dollars;
 	        	cost.add(dollars);
 
 	        String time = giftReader.nextLine();
@@ -58,6 +60,7 @@ public class christmasProject
 	        	days.add(amountOfDays);
 		}
 
+		System.out.println(totalCost + "Total cost is right here ");
 
 		//EG - Started the while loop to add the kids
 		//EG - thinking about creating other files to have objects like a present object and a child object
@@ -68,13 +71,6 @@ public class christmasProject
 		}
 		//end EG
 
-			//prints things out to check them DDZ
-            System.out.println (description);
-            System.out.println (minS);
-            System.out.println (max);
-            System.out.println (cost);
-            System.out.println (days);
-            System.out.println(kids);
 
         //get info from user DDZ
         System.out.println("What is your budget?");
