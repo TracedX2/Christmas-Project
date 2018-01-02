@@ -28,6 +28,7 @@ public class christmasProject
         ArrayList<Integer> age = new ArrayList<Integer>();
         ArrayList<String> description = new ArrayList<String>();
         ArrayList<String> name = new ArrayList<String>();
+        ArrayList<String> kids = new ArrayList<String>();
         ArrayList<String> behavior = new ArrayList<String>();
         ArrayList<Integer> days = new ArrayList<Integer>();
         String n;
@@ -62,17 +63,18 @@ public class christmasProject
 		//EG - thinking about creating other files to have objects like a present object and a child object
 		while(kidReader.hasNext())
 		{
-			String test = kidReader.nextLine();
-			System.out.println(test);
+			String kid = kidReader.nextLine();
+			kids.add(kid);
 		}
 		//end EG
-/*
+
 			//prints things out to check them DDZ
             System.out.println (description);
             System.out.println (minS);
             System.out.println (max);
             System.out.println (cost);
             System.out.println (days);
+            System.out.println(kids);
 
         //get info from user DDZ
         System.out.println("What is your budget?");
@@ -158,6 +160,6 @@ public class christmasProject
             System.out.println ("Santa has run out of money");
         }
         //end RF
-        */
+
 }
 }
