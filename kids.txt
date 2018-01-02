@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Betty, nice, 13
 Dennis, nice, 12
 Jerry, naughty, 16
@@ -99,7 +98,6 @@ Tiffany, nice, 18
 Raymond, naughty, 15
 Lori, nice, 18
 Trent, nice, 16
-=======
 Betty, nice, 13
 Dennis, nice, 12
 Jerry, naughty, 16
@@ -111,7 +109,7 @@ Luke, nice, 15
 Aran, naughty, 16
 Catherine, nice, 12
 Linda, naughty, 14
-Nate5, nice, 16
+Nate, nice, 16
 Henry, nice, 17
 Troy, nice, 15
 Jessica, nice, 12
@@ -200,4 +198,3 @@ Tiffany, nice, 18
 Raymond, naughty, 15
 Lori, nice, 18
 Trent, nice, 16
->>>>>>> c8ee3266085db9a44ec07fc8c3db511bdafc7e65
