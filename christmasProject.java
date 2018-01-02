@@ -57,6 +57,7 @@ public class christmasProject
 	        	days.add(amountOfDays);
 		}
 
+
 		//EG - Started the while loop to add the kids
 		//EG - thinking about creating other files to have objects like a present object and a child object
 		while(kidReader.hasNext())
