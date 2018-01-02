@@ -84,6 +84,7 @@ public class christmasProject
 
 	//cut people from the gift list
 	//RF - used for each loops to loop through ArrayLists and cut people from the lists and changed some bad operand errors
+	//EG - (Check loops for working condition it seems to be endless)
     for(int i: age)
     {
 		for(double d: cost)
