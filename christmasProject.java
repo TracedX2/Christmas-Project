@@ -62,7 +62,7 @@ public class christmasProject
 		//EG - thinking about creating other files to have objects like a present object and a child object
 		while(kidReader.hasNext())
 		{
-
+			String test = kidReader.nextLine();
 		}
 		//end EG
 
@@ -76,7 +76,7 @@ public class christmasProject
         //get info from user DDZ
         System.out.println("What is your budget?");
         budget = reader.nextDouble();
-        System.out.println("When would you like these items by?");
+        System.out.println("How many days till Christmas");//EG rewrote question
         daysLeft = reader.nextInt();
 
 	//cut people from the gift list
