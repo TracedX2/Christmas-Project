@@ -34,8 +34,13 @@ public class christmasProject
         String n;
         double totalCost = 0;
         //end EG
+        //DDZ- create printwriters to create an output file
+        File file = new File("Output.txt");
+        FileOutputStream fos = new FileOutputStream(file);
+        DataOutputStream dos = new DataOutputStream(fos);
+        PrintWriter pw = new PrintWriter(dos);
 
-	           //assign values from text file
+	    //assign values from text file
 	    while(giftReader.hasNext())
 	    {
 	   	//EG - brings in items from the list and adds it to the Arrays
@@ -79,6 +84,7 @@ public class christmasProject
         daysLeft = reader.nextInt();
 
 	//cut people from the gift list
+	//DDZ - helped RF set up loops and added variables for later output
 	//RF - used for each loops to loop through ArrayLists and cut people from the lists and changed some bad operand errors
 	//EG - (Check loops for working condition it seems to be endless)
     for(int i: age)
@@ -88,6 +94,7 @@ public class christmasProject
        		if(i <= 15)
        		{
             	budget = budget - d;
+            	spent = spent + d;
         	}
 		}
 	}
@@ -100,6 +107,7 @@ public class christmasProject
 					for(double d: cost)
 					{
                     	budget = budget - d;
+                    	spent = spent + d;
 					}
                 }
             }
@@ -111,6 +119,7 @@ public class christmasProject
 					for(double d: cost)
 					{
                     	budget = budget - d;
+                    	spent = spent + d;
 					}
                 }
             }
@@ -124,7 +133,8 @@ public class christmasProject
 			for(double d: cost)
 			{
             	budget = budget - d;
-			}
+            	spent = spent + d;
+            }
         }
 	}
         while(budget != 0)
@@ -137,6 +147,7 @@ public class christmasProject
 					for(double d: cost)
 					{
                    		budget = budget - d;
+                   		spent = spent + d;
 					}
                 }
             }
@@ -148,6 +159,7 @@ public class christmasProject
 					for(double d: cost)
 					{
                     	budget = budget - d;
+                    	spent = spent + d;
 					}
                 }
             }
@@ -158,5 +170,9 @@ public class christmasProject
         }
         //end RF
 
-}
+		//DDZ- print info to output files and close files
+		dos.writeDouble(budget);
+		dos.writeDouble(spent);
+		dos.close();
+	}
 }
