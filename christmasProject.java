@@ -87,15 +87,16 @@ public class christmasProject
 	//DDZ - helped RF set up loops and added variables for later output
 	//RF - used for each loops to loop through ArrayLists and cut people from the lists and changed some bad operand errors
 	//EG - (Check loops for working condition it seems to be endless)
-    for(int i: age)
-    {
-		for(double d: cost)
+	//RF - fixed this first loop it works now
+    for (int i = 0; i < age.size(); i++)
+	{
+		if(age.get(i) <= 15)
 		{
-       		if(i <= 15)
-       		{
-            	budget = budget - d;
-            	spent = spent + d;
-        	}
+			for (int x = 0; x < cost.size(); x++)
+			{
+				budget = budget - cost.get(x);
+				spent = spent + cost.get(x);
+			}
 		}
 	}
         while(budget != 0)
