@@ -31,6 +31,8 @@ public class christmasProject
         ArrayList<String> kids = new ArrayList<String>();
         ArrayList<String> behavior = new ArrayList<String>();
         ArrayList<Integer> days = new ArrayList<Integer>();
+        //RF - array list to store kids under 15
+        ArrayList<Integer> underAge = new ArrayList<Integer>();
         String n;
         double totalCost = 0;
         //end EG
@@ -87,17 +89,23 @@ public class christmasProject
 	//DDZ - helped RF set up loops and added variables for later output
 	//RF - used for each loops to loop through ArrayLists and cut people from the lists and changed some bad operand errors
 	//EG - (Check loops for working condition it seems to be endless)
-    for(int i: age)
-    {
-		for(double d: cost)
+	//RF - fixed this first loop it works now
+    for (int i = 0; i < age.size(); i++)
+	{
+		if(age.get(i) <= 15)
 		{
-       		if(i <= 15)
-       		{
-            	budget = budget - d;
-            	spent = spent + d;
-        	}
+			underAge.add(age.get(i));
 		}
 	}
+
+	for (int x = 0; x < cost.size(); x++)
+	{
+		budget = budget - cost.get(x);
+		spent = spent + cost.get(x);
+	}
+	System.out.println(budget);
+	System.out.println(spent);
+	/*
         while(budget != 0)
         {
             for(int a = 16; a <= 18; a++)
@@ -173,6 +181,6 @@ public class christmasProject
 		//DDZ- print info to output files and close files
 		dos.writeDouble(budget);
 		dos.writeDouble(spent);
-		dos.close();
+		dos.close();*/
 	}
 }
