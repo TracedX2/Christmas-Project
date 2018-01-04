@@ -110,32 +110,38 @@ public class christmasProject
 	System.out.println(budget);
 	System.out.println(spent);
 
-        while(budget != 0)
-        {
+	while(budget <= 0)
+    {
+		for (int i = 0; i < age.size(); i++)
+		{
             for(int a = 16; a <= 18; a++)
             {
-                if(age.equals(a) && behavior.equals("nice"))
+                if(age.get(i).equals(a) && behavior.get(i).equals("nice"))
                 {
-					for(double d: cost)
+					for(int d = 0; d < cost.size(); d++)
 					{
-                    	budget = budget - d;
-                    	spent = spent + d;
+                    	budget = budget - cost.get(d);
+                    	spent = spent + cost.get(d);
 					}
                 }
-            }
+			}
+		}
+		//RF - fixed these loops the logic might be off, but they do run
+		for (int i = 0; i < age.size(); i++)
+		{
             for(int b = 16; b <= 18; b++)
             {
-                if(age.equals(b) && behavior.equals("naughty"))
-                {
-					//RF - for each loop
-					for(double d: cost)
+            	if(age.get(i).equals(b) && behavior.get(i).equals("naughty"))
+            	{
+					for(int d = 0; d < cost.size(); d++)
 					{
-                    	budget = budget - d;
-                    	spent = spent + d;
+            	        budget = budget - cost.get(d);
+            	        spent = spent + cost.get(d);
 					}
-                }
+				}
             }
-        }
+		}
+	}
 	//cut people from the gift list
     for(int i: age)
     {
@@ -149,33 +155,6 @@ public class christmasProject
             }
         }
 	}
-        while(budget != 0)
-        {
-            for(int a = 16; a <= 18; a++)
-            {
-                if(age.equals(a) && behavior.equals("nice"))
-                {
-					//RF - for each loop
-					for(double d: cost)
-					{
-                   		budget = budget - d;
-                   		spent = spent + d;
-					}
-                }
-            }
-            for(int b = 16; b <= 18; b++)
-            {
-                if(age.equals(b) && behavior.equals("naughty"))
-                {
-					//RF - for each loop
-					for(double d: cost)
-					{
-                    	budget = budget - d;
-                    	spent = spent + d;
-					}
-                }
-            }
-        }
         if(budget == 0)
         {
             System.out.println ("Santa has run out of money");
