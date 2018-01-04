@@ -31,6 +31,7 @@ public class christmasProject
         ArrayList<String> kids = new ArrayList<String>();
         ArrayList<String> behavior = new ArrayList<String>();
         ArrayList<Integer> days = new ArrayList<Integer>();
+        ArrayList<Presents> presentList = new ArrayList<Presents>();
         //RF - array list to store kids under 15
         ArrayList<Integer> underAge = new ArrayList<Integer>();
         String n;
@@ -65,6 +66,9 @@ public class christmasProject
 	        String time = giftReader.nextLine();
 	        int amountOfDays = Integer.parseInt(time);
 	        	days.add(amountOfDays);
+
+
+
 		}
 
 		System.out.println(totalCost + "Total cost is right here ");
@@ -105,13 +109,14 @@ public class christmasProject
 	}
 	System.out.println(budget);
 	System.out.println(spent);
-	/*
+
         while(budget != 0)
         {
             for(int a = 16; a <= 18; a++)
             {
                 if(age.equals(a) && behavior.equals("nice"))
                 {
+					System.out.println("LOOK HERE");
 					for(double d: cost)
 					{
                     	budget = budget - d;
@@ -181,6 +186,6 @@ public class christmasProject
 		//DDZ- print info to output files and close files
 		dos.writeDouble(budget);
 		dos.writeDouble(spent);
-		dos.close();*/
+		dos.close();
 	}
 }
