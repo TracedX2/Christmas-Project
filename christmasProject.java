@@ -116,7 +116,6 @@ public class christmasProject
             {
                 if(age.equals(a) && behavior.equals("nice"))
                 {
-					System.out.println("LOOK HERE");
 					for(double d: cost)
 					{
                     	budget = budget - d;
