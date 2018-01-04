@@ -5,8 +5,8 @@ public class testerforthings
 {
 	public static void main (String[]args)
 	{
-		Presents firstGift = new Presents("Twister", 5, 80, 9.99, 3);
+		Kids kid1 = new Kids("Eli", "Nice", 80);
 
-		System.out.println(firstGift);
+		System.out.println(kid1);
 	}
 }
