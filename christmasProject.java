@@ -47,12 +47,12 @@ public class christmasProject
 	    while(giftReader.hasNext())
 	    {
 	   	//EG - brings in items from the list and adds it to the Arrays
-	   	String d = giftReader.nextLine();
+	   		String d = giftReader.nextLine();
 	        	description.add(d);
 
-	   	String mi = giftReader.nextLine();
-	   	int minInt = Integer.parseInt(mi);
-	   		minS.add(mi);
+	   		String mi = giftReader.nextLine();
+	   		int minInt = Integer.parseInt(mi);
+	   			minS.add(mi);
 
 	        String maxAge = giftReader.nextLine();
 	        int ageInt = Integer.parseInt(maxAge);
@@ -67,11 +67,11 @@ public class christmasProject
 	        int amountOfDays = Integer.parseInt(time);
 	        	days.add(amountOfDays);
 
+	       presentList.add(gift1)
+
 
 
 		}
-
-		System.out.println(totalCost + "Total cost is right here ");
 
 		//EG - Started the while loop to add the kids
 		//EG - thinking about creating other files to have objects like a present object and a child object
