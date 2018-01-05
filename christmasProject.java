@@ -92,6 +92,7 @@ public class christmasProject
 			System.out.println(kidName);
 			System.out.println(norn);
 			System.out.println(kidAge);
+
 		}
 		//end EG
 
