@@ -44,9 +44,9 @@ public class christmasProject
         PrintWriter pw = new PrintWriter(dos);
 
 	    //assign values from text file
+	    //EG - brings in items from the list and adds it to the Arrays
 	    while(giftReader.hasNext())
 	    {
-	   	//EG - brings in items from the list and adds it to the Arrays
 	   		String d = giftReader.nextLine();
 	    	    	description.add(d);
 
@@ -67,6 +67,7 @@ public class christmasProject
 	        int amountOfDays = Integer.parseInt(time);
 	        	days.add(amountOfDays);
 
+			//EG - makes the object and adds it to the list
 			Presents present1 = new Presents(d, minInt, ageInt, dollars, amountOfDays);
 
 			presentList.add(present1);
@@ -77,8 +78,7 @@ public class christmasProject
 		System.out.println(totalCost + "Total cost is right here ");
 		System.out.println(presentList);
 
-		//EG - Started the while loop to add the kids
-		//EG - thinking about creating other files to have objects like a present object and a child object
+		//EG - While loop to add the kids
 		while(kidReader.hasNext())
 		{
 			String kidName;
