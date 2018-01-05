@@ -48,11 +48,8 @@ public class christmasProject
 	    {
 	   	//EG - brings in items from the list and adds it to the Arrays
 	   		String d = giftReader.nextLine();
-<<<<<<< HEAD
-	    	    	description.add(d);
-=======
+
 	        	description.add(d);
->>>>>>> 605322c17ee12a744d07ccac452c07f5d8ac4594
 
 	   		String mi = giftReader.nextLine();
 	   		int minInt = Integer.parseInt(mi);
@@ -71,22 +68,15 @@ public class christmasProject
 	        int amountOfDays = Integer.parseInt(time);
 	        	days.add(amountOfDays);
 
-<<<<<<< HEAD
 			Presents present1 = new Presents(d, minInt, ageInt, dollars, amountOfDays);
 
 			presentList.add(present1);
-=======
-	       presentList.add(gift1)
->>>>>>> 605322c17ee12a744d07ccac452c07f5d8ac4594
 
-
-
-<<<<<<< HEAD
 		System.out.println(totalCost + "Total cost is right here ");
 		System.out.println(presentList);
-=======
+
 		}
->>>>>>> 605322c17ee12a744d07ccac452c07f5d8ac4594
+
 
 		//EG - Started the while loop to add the kids
 		//EG - thinking about creating other files to have objects like a present object and a child object
@@ -97,8 +87,8 @@ public class christmasProject
 			int kidAge;
 			Scanner K = new Scanner("kids.txt").useDelimiter(",");
 
-			kidName = K.nextLine();
-			norn = K.nextLine();
+			kidName = K.next();
+			norn = K.next();
 			kidAge = K.nextInt();
 			System.out.println(kidName);
 			System.out.println(norn);
