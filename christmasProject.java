@@ -48,8 +48,7 @@ public class christmasProject
 	    {
 	   	//EG - brings in items from the list and adds it to the Arrays
 	   		String d = giftReader.nextLine();
-
-	        	description.add(d);
+	    	    	description.add(d);
 
 	   		String mi = giftReader.nextLine();
 	   		int minInt = Integer.parseInt(mi);
@@ -72,11 +71,11 @@ public class christmasProject
 
 			presentList.add(present1);
 
-		System.out.println(totalCost + "Total cost is right here ");
-		System.out.println(presentList);
 
 		}
 
+		System.out.println(totalCost + "Total cost is right here ");
+		System.out.println(presentList);
 
 		//EG - Started the while loop to add the kids
 		//EG - thinking about creating other files to have objects like a present object and a child object
@@ -87,8 +86,8 @@ public class christmasProject
 			int kidAge;
 			Scanner K = new Scanner("kids.txt").useDelimiter(",");
 
-			kidName = K.next();
-			norn = K.next();
+			kidName = K.nextLine();
+			norn = K.nextLine();
 			kidAge = K.nextInt();
 			System.out.println(kidName);
 			System.out.println(norn);
@@ -124,38 +123,32 @@ public class christmasProject
 	System.out.println(budget);
 	System.out.println(spent);
 
-	while(budget <= 0)
-    {
-		for (int i = 0; i < age.size(); i++)
-		{
+        while(budget != 0)
+        {
             for(int a = 16; a <= 18; a++)
             {
-                if(age.get(i).equals(a) && behavior.get(i).equals("nice"))
+                if(age.equals(a) && behavior.equals("nice"))
                 {
-					for(int d = 0; d < cost.size(); d++)
+					for(double d: cost)
 					{
-                    	budget = budget - cost.get(d);
-                    	spent = spent + cost.get(d);
+                    	budget = budget - d;
+                    	spent = spent + d;
 					}
                 }
-			}
-		}
-		//RF - fixed these loops the logic might be off, but they do run
-		for (int i = 0; i < age.size(); i++)
-		{
+            }
             for(int b = 16; b <= 18; b++)
             {
-            	if(age.get(i).equals(b) && behavior.get(i).equals("naughty"))
-            	{
-					for(int d = 0; d < cost.size(); d++)
+                if(age.equals(b) && behavior.equals("naughty"))
+                {
+					//RF - for each loop
+					for(double d: cost)
 					{
-            	        budget = budget - cost.get(d);
-            	        spent = spent + cost.get(d);
+                    	budget = budget - d;
+                    	spent = spent + d;
 					}
-				}
+                }
             }
-		}
-	}
+        }
 	//cut people from the gift list
     for(int i: age)
     {
@@ -169,6 +162,33 @@ public class christmasProject
             }
         }
 	}
+        while(budget != 0)
+        {
+            for(int a = 16; a <= 18; a++)
+            {
+                if(age.equals(a) && behavior.equals("nice"))
+                {
+					//RF - for each loop
+					for(double d: cost)
+					{
+                   		budget = budget - d;
+                   		spent = spent + d;
+					}
+                }
+            }
+            for(int b = 16; b <= 18; b++)
+            {
+                if(age.equals(b) && behavior.equals("naughty"))
+                {
+					//RF - for each loop
+					for(double d: cost)
+					{
+                    	budget = budget - d;
+                    	spent = spent + d;
+					}
+                }
+            }
+        }
         if(budget == 0)
         {
             System.out.println ("Santa has run out of money");
