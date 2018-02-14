@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-/*The program complies and runs but when its running it does have an index out of bounds array*/
+/*The program complies and runs but it has an issue where it wont find the next line in the text file*/
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
 public class christmasProject
